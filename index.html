@@ -1,0 +1,76 @@
+
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <link rel="stylesheet" href="style.css">
+    <title>Tic-Tac-Toe</title>
+  </head>
+  <body>
+    <div class="container">
+
+    <table id="scoreboard">
+      <tr>
+        <td id="teamX">Team X</td>
+        <td id="teamO">Team O</td>
+      </tr>
+      <tr>
+        <td class="score" id="teamXScore">0</td>
+        <td class="score" id="teamOScore">0</td>
+      </tr>
+      <tr id="player-turn"></tr>
+    </table>
+
+    <table cellpadding="0" cellspacing="0">
+      <tr>
+        <td>
+          <input type="button" class="game-button"
+          id="box1" value=""/>
+        </td>
+        <td>
+          <input type="button" class="game-button"
+          id="box2" value=""/>
+        </td>
+        <td>
+          <input type="button" class="game-button"
+          id="box3" value=""/>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <input type="button" class="game-button"
+          id="box4" value=""/>
+        </td>
+        <td>
+          <input type="button" class="game-button"
+          id="box5" value=""/>
+        </td>
+        <td>
+          <input type="button" class="game-button"
+          id="box6" value=""/>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <input type="button" class="game-button" id="box7" color="black" value=""/>
+        </td>
+        <td>
+          <input type="button" class="game-button" id="box8" value=""/>
+        </td>
+        <td>
+          <input type="button" class="game-button"
+          id="box9" value=""/>
+        </td>
+      </tr>
+    </table>
+    <p id="end-message"></p>
+  </div>
+    <div>
+      <button id="reset" onclick="resetGame()">Reset</button>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

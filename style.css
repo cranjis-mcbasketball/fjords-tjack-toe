@@ -1,0 +1,76 @@
+header{
+  font-size: 36;
+  color: black;
+}
+
+.container {
+  align-content: center;
+}
+
+.grid-container {
+  display: grid;
+  /* grid-column-gap: 10px; */
+}
+
+table{
+  border-collapse:separate;
+  border-spacing: 15px;
+  table-layout: fixed;
+
+  }
+
+  #scoreboard{
+    font-size: 30px;
+    background-color: rgb(0, 19, 128);
+    color: rgb(192, 82, 150);
+    margin-left: 1.5cm;
+    align-content: center;
+    align-self: center;
+  }
+
+  #scoreboard .score {
+    color: goldenrod;
+    text-align: center;
+    font-size: 30px;
+
+  }
+
+  #player-turn{
+    color: rgb(192, 82, 150);
+    font-size: 20px;
+  }
+
+  td.game-button{
+  background-color: #4287f5;
+  color: white;
+  width: 100px;
+  position: relative;
+  text-align: center;
+  border: 1px solid black;
+  border-spacing: 15px;
+  padding: 1px;
+  }
+
+  .game-button{
+    background-color: #4287f5;
+    color: rgb(126, 39, 126);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: xx-large;
+    font-weight: bolder;
+    width: 100px;
+    position: relative;
+    text-align: center;
+    border: none;
+    border-spacing: 15px;
+    padding: 10px;
+    }
+
+    /* adding focus seems to allow state change once clicked */
+    .game-button:focus {
+      background-color: yellow;
+      }
+/*
+  td:visited {
+    display: block;
+    margin-top: 100%;
+  } */
