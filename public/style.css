@@ -1,6 +1,60 @@
 header{
-  font-size: 36;
+  font-size: 36px;
   color: black;
+}
+
+body{
+  background-image: url("fjordsbg.jpg")}
+
+h1{
+  font-size: 28px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-stretch: narrower;
+  color: rgb(161, 110, 255);
+  margin-top: -0.5cm;
+  -webkit-text-stroke: 2px black;
+  margin-left: 6.0cm;
+  /* padding: 10px;
+  outline-color: navy;
+  outline-width: thick;
+  text-shadow:3px 5px 3px #001016; */
+}
+
+.headingtitle{
+  font-size: 36px;
+  font-weight: bolder;
+  color: rgb(0, 0, 0);
+  margin-left: 3.3cm;
+  margin-bottom: 0cm;
+  font-family: cursive;
+}
+
+
+
+/* The animation code */
+@keyframes titleanim {
+  0%   {background-color: red;}
+  10%   {background-color: orange;}
+  20%  {background-color: yellow;}
+  30% {background-color: green;}
+  40%  {background-color: blue;}
+  50%   {background-color: red;}
+  60%   {background-color: orange;}
+  70%  {background-color: yellow;}
+  80% {background-color: green;}
+  90%  {background-color: blue;}
+  100%  {background-color: rgb(73, 0, 133);}
+}
+
+/* The element to apply the animation to */
+.headingtitle {
+  width: 530px;
+  height: 120px;
+  background-color: red;
+  animation-name: titleanim;
+  animation-duration: 15s;
+  animation-iteration-count: 100;
+  text-align-last: center;
 }
 
 .container {
@@ -16,14 +70,16 @@ table{
   border-collapse:separate;
   border-spacing: 15px;
   table-layout: fixed;
+  margin-left: 4cm;
 
   }
 
   #scoreboard{
     font-size: 30px;
-    background-color: rgb(0, 19, 128);
+    background:linear-gradient(to bottom, #0a034b 5%, #0020b1 100%);
+    /* background-color: linear rgb(0, 19, 128); */
     color: rgb(192, 82, 150);
-    margin-left: 1.5cm;
+    margin-left: 5.1cm;
     align-content: center;
     align-self: center;
   }
@@ -39,6 +95,35 @@ table{
     color: rgb(192, 82, 150);
     font-size: 20px;
   }
+
+  #end-message{
+    color: #129218;
+    position: relative;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-stretch: extra-expanded;
+    font-size: 32px;
+    animation: ease-in-out;
+    -webkit-flow-into: initial;
+    margin-left: 5.5cm;
+    margin-top: 0.1cm;
+    -webkit-text-stroke: 2px black;
+  }
+
+  /* The animation code */
+@keyframes endanim {
+  0%   {color: red;}
+  20%   {color: orange;}
+  40%  {color: yellow;}
+  80% {color: green;}
+  100%  {color: blue;}
+}
+
+/* The element to apply the animation to */
+#end-message {
+  color: #129218;
+  animation-name: endanim;
+  animation-duration: 1.5s;
+}
 
   td.game-button{
   background-color: #4287f5;
@@ -64,6 +149,35 @@ table{
     border-spacing: 15px;
     padding: 10px;
     }
+
+    #reset {
+      margin-left: 1.3cm;
+      margin-left: 5.5cm;
+      box-shadow: 3px 4px 0px 0px #4f0b05;
+      background:linear-gradient(to bottom, #570700 5%, #f24437 100%);
+      background-color:#570700;
+      border-radius:31px;
+      border:1px solid #1a0504;
+      display:inline-block;
+      cursor:pointer;
+      color:#ffffff;
+      font-family:Trebuchet MS;
+      font-size:21px;
+      padding:7px 25px;
+      text-decoration: none;
+      text-shadow:0px 1px 0px #810e05;
+    }
+    #reset:hover {
+      background:linear-gradient(to bottom, #2eda53 5%, #00330b 100%);
+      background-color:#31aa60;
+      box-shadow: 3px 4px 0px 0px #054f1b;
+      text-shadow:0px 1px 0px #01491d;
+    }
+    #reset:active {
+      position:relative;
+      top:1px;
+    }
+
 
     /* adding focus seems to allow state change once clicked */
     .game-button:focus {

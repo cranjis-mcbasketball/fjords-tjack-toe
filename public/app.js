@@ -1,4 +1,6 @@
-console.log("It's cranjis here, dealing some incompetent tic tac toe magic");
+console.log(
+  "It's cranjis here, with some incompetent fjords tjack toe magic in hand"
+);
 
 // create variables
 var player1;
@@ -15,7 +17,7 @@ var gameButtons = document.getElementsByClassName('game-button');
 var currentPlay = 1;
 var endMessage = document.getElementById('end-message');
 var teamFjordScore = document.getElementById('teamFjordScore');
-var teamXScore = document.getElementById('teamXScore');
+var teamFjxrdScore = document.getElementById('teamFjxrdScore');
 var turn = document.getElementById('player-turn');
 var box1 = document.getElementById('box1');
 var box2 = document.getElementById('box2');
@@ -31,7 +33,8 @@ var box9 = document.getElementById('box9');
 
 var whichTurn = function () {
   gamepiece = plays % 2 == 0 ? 'X' : 'O';
-  turn.innerText = "It's team " + gamepiece + "'s turn";
+  turn.innerText =
+    "It's team " + (gamepiece == 'X' ? 'fjxrd' : 'fjord') + "'s turn";
 };
 
 whichTurn();
@@ -63,12 +66,12 @@ var checkWinner = function () {
       playsArr.includes('X5') &&
       playsArr.includes('X7'))
   ) {
-    console.log('Team X is the winner!');
-    endMessage.innerText = 'Team X is the winner!';
-    teamXScore.innerText++;
+    console.log('Team fjxrd is the winner!');
+    endMessage.innerText = 'Team fjxrd is the winner!';
+    teamFjxrdScore.innerText++;
     return setTimeout(function () {
       nextRound();
-    }, 2000);
+    }, 2300);
   } else if (
     (playsArr.includes('O1') &&
       playsArr.includes('O2') &&
@@ -95,15 +98,16 @@ var checkWinner = function () {
       playsArr.includes('O5') &&
       playsArr.includes('O7'))
   ) {
-    console.log('Team O is the winner!');
-    endMessage.innerText = 'Team O is the winner!';
+    console.log('Team fjord is the winner!');
+    endMessage.innerText = 'Team fjord is the winner!';
     teamFjordScore.innerText++;
     return setTimeout(function () {
       nextRound();
     }, 2000);
   } else if (plays === 9) {
-    console.log('EVERYBODY is a winner :) [aka tie game]');
-    endMessage.innerText = 'EVERYBODY is a winner :) [aka tie game]';
+    console.log('EVERYBODY is a winner :)');
+    endMessage.innerText = 'EVERYBODY is a winner :)';
+    endMessage.style.animation = 'ease-in-out';
     return setTimeout(function () {
       nextRound();
     }, 2000);
@@ -195,7 +199,7 @@ var nextRound = function () {
   // };
 
   // })
-};;
+};
 
 var resetGame = function () {
   plays = 0;
@@ -203,7 +207,7 @@ var resetGame = function () {
   gamepiece = 'X';
   endMessage.innerText = '';
   teamFjordScore.innerText = 0;
-  teamXScore.innerText = 0;
+  teamFjxrdScore.innerText = 0;
   // document.getElementById('reset').addEventListener('click', function(){
   for (var i = 1; i < 10; i++) {
     document.getElementById('box' + i).value = '';
