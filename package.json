@@ -1,21 +1,21 @@
 {
-  "name": "tic-tac-toe",
+  "name": "fjords-tjack-toe",
   "version": "1.0.0",
-  "description": "tic-tac-toe to be deployed",
+  "description": "fjords-tjack-toe to be deployed",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/cranjis-mcbasketball/tic-tac-toe.git"
+    "url": "git+https://github.com/cranjis-mcbasketball/fjords-tjack-toe.git"
   },
   "author": "Mason Borchard",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/cranjis-mcbasketball/tic-tac-toe/issues"
+    "url": "https://github.com/cranjis-mcbasketball/fjords-tjack-toe/issues"
   },
-  "homepage": "https://github.com/cranjis-mcbasketball/tic-tac-toe#readme",
+  "homepage": "https://github.com/cranjis-mcbasketball/fjords-tjack-toe#readme",
   "dependencies": {
     "node": "^13.10.1"
   }
